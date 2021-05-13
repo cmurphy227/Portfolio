@@ -27,6 +27,7 @@ body {
   left: 0;
   right: 0;
   transition: all 0.3s ease-in-out;
+  z-index: 1;
 }
 
 .nav .container {
@@ -111,10 +112,51 @@ body {
 .content h3 {
   font-size: 150%;
   margin: 20px 0;
+  text-align: center;
 }
 
 .content p {
   color: #555;
   line-height: 30px;
   letter-spacing: 1.2px;
+  text-align: center;
+}
+
+.content img {
+  text-align: center;
+}
+
+.content img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.content a {
+  color: #c0392b;
+}
+.content a:visited {
+  color: #c0392b;
+}
+
+.content_img {
+  position: relative;
+  padding: 10px;
+}
+
+.imgtext {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.content_img:hover .imgtext {
+  visibility: visible;
+  opacity: 1;
 }
