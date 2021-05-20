@@ -46,11 +46,15 @@
       transition: opacity .2s, visibility .2s;
     }
 
-    .table {
+    #table {
       display: inline-table;
       padding-left: 0;
     }
-  
+
+    #table2 {
+      display: none;
+      padding-left: 0;
+    }
   
     .nav.active .nav-menu {
       background-color: #fff;

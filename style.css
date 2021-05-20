@@ -165,9 +165,19 @@ body {
   opacity: 1;
 }
 
-.table {
+#table {
   display: table;
   padding-left: 5.5%;
+}
+
+#table2 {
+  display: none;
+  padding-left: 5.5%;
+}
+
+button {
+  position: relative;
+  left: 47%;
 }
 
 h5 {
