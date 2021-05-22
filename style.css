@@ -165,20 +165,48 @@ body {
   opacity: 1;
 }
 
-#table {
-  display: table;
+#table1 {
+  display: none;
   padding-left: 5.5%;
+  transition: all 0.3s ease-in-out;
 }
 
 #table2 {
   display: none;
   padding-left: 5.5%;
+  transition: all 0.3s ease-in-out;
+}
+
+#table3 {
+  display: none;
+  padding-left: 5.5%;
+  transition: all 0.3s ease-in-out;
+}
+
+#table4 {
+  display: none;
+  padding-left: 5.5%;
+  transition: all 0.3s ease-in-out;
 }
 
 button {
   position: relative;
-  left: 47%;
+  left: 45.15%;
+  border: solid #000;
+  padding: 3px;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  cursor: pointer;
 }
+
+/* button:hover {
+  border: solid #c0392b;
+  padding: 3px;
+  background-color: #fff;
+  color: #c0392b;
+  cursor: pointer;
+} */
 
 h5 {
   font-size: 100%;
@@ -199,3 +227,4 @@ h5 {
   transition: all 0.3s ease-in-out;
   background-color: #fff;
 }
+

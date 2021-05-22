@@ -28,29 +28,33 @@ function closeMenu() {
 }
 
 
-// Back and Next buttons
-function displayChange() {
-let displaycount = 0;
+// Page buttons
+function page1() {
 
-  document.getElementById("back").onclick = function backbtn(){
-  displaycount--;
-  if (displaycount == -1){
-    displaycount = 1;
-    }
-  }
-  document.getElementById("next").onclick = function nextbtn(){
-  displaycount++;
-  if (displaycount == 2){
-    displaycount = 0;
-    }
-  }
+  document.getElementById("table3").style.display = "none";
+  document.getElementById("table4").style.display = "none";
+  document.getElementById("table1").style.display = "table";
+  document.getElementById("table2").style.display = "table";
+  location.href = "#projects";
+  document.getElementById("page1").style.backgroundColor = "#fff";
+  document.getElementById("page1").style.color = "#c0392b";
+  document.getElementById("page1").style.borderColor = "#c0392b";
+  document.getElementById("page2").style.backgroundColor = "#000";
+  document.getElementById("page2").style.color = "#fff";
+  document.getElementById("page2").style.borderColor = "#000";
+}
 
-  if (displaycount == 0){
-    document.getElementById("table2").style.display = "none";
-    document.getElementById("table").style.display = "table";
-  }
-  if (displaycount == 1){
-    document.getElementById("table2").style.display = "table";
-    document.getElementById("table").style.display = "none";
-  }
+function page2() {
+
+  document.getElementById("table3").style.display = "table";
+  document.getElementById("table4").style.display = "table";
+  document.getElementById("table1").style.display = "none";
+  document.getElementById("table2").style.display = "none";
+  location.href = "#projects";
+  document.getElementById("page1").style.backgroundColor = "#000";
+  document.getElementById("page1").style.color = "#fff";
+  document.getElementById("page1").style.borderColor = "#000";
+  document.getElementById("page2").style.backgroundColor = "#fff";
+  document.getElementById("page2").style.color = "#c0392b";
+  document.getElementById("page2").style.borderColor = "#c0392b";
 }
